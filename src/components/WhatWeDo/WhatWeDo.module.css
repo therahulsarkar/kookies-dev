@@ -1,0 +1,5 @@
+.boldText > h1{
+    color:rgb(187, 115, 255);
+    font-size: 3rem;
+    font-weight: bold;
+}

@@ -1,0 +1,15 @@
+.boldText > h1{
+    color:rgb(176, 115, 255);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.whyUsText > h1{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.whyUsText > p{
+    font-size: 1rem;
+    font-weight: 400;
+}

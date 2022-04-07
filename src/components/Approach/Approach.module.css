@@ -1,0 +1,26 @@
+.approach{
+    margin: 2rem;
+}
+
+.approachText > h1{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.approachText > h2{
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.approachText > p{
+    margin: 1rem 0 1rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.approachText > h3{
+    margin: 1rem 0 3rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
