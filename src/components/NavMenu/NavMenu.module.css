@@ -1,0 +1,56 @@
+.navMenuContainer{
+    width: 100%;
+    height: 88vh;
+    position: fixed;     
+    z-index: 2;
+    top: 12vh;
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navMenuContainer > h1{
+
+    color: white; 
+    background: url(../../assets/images/home/bgText.svg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12rem;
+    font-weight: bolder;
+    position: absolute;
+    z-index: -1;
+}
+
+.navMenuContainer div p{
+    /* color: azure; */
+    font-size: 3rem;
+    margin-top: 1rem;
+    font-weight:bolder;
+    cursor: pointer;
+}
+
+
+.hollow > p{
+    color: aliceblue !important;
+
+}
+
+.noHollow > p{
+    color: aliceblue !important;
+}
+
+/* .holloText > p{
+    color: rgb(224, 0, 0);
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(255, 0, 0);
+    font-size: 2.5rem;
+    font-weight: 600;
+} 
+
+*/

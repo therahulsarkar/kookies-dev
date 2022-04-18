@@ -38,6 +38,13 @@
 .heroBg{
     position: absolute;
     z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroBg  img{
+    opacity: 0.5;
+    padding: 3rem ;
 }
 
 .heroBg{

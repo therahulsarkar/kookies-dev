@@ -26,7 +26,7 @@ const WhatWeDo = () => {
       <div className=" py-20 ">
         <div className="flex flex-col text-left w-full mb-10 pl-8">
           <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-            What We Do
+          A Day at Kookies
           </h1>
         </div>
         <div className="flex flex-wrap m-4">

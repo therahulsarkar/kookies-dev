@@ -14,6 +14,7 @@ import Career from './pages/Career/Career';
 import Primo from './pages/Primo/Primo';
 import Transguard from './pages/Transguard/Transguard';
 import Firstep from './pages/Firstep/Firstep';
+import Work from './pages/Work/Work';
 
 const rootElement = document.getElementById("root");
 render(
@@ -24,6 +25,7 @@ render(
       <Route path="contact" element={<Contact />} /> 
       <Route path="approach" element={<Approach />} /> 
       <Route path="career" element={<Career />} /> 
+      <Route path="work" element={<Work />} /> 
 
       <Route path="primo" element={<Primo />} /> 
       <Route path="transguard" element={<Transguard />} /> 

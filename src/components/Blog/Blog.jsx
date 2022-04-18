@@ -4,6 +4,7 @@ import blog1 from "../../assets/images/blog1.jpg";
 import blog2 from "../../assets/images/blog2.jpg";
 import blog3 from "../../assets/images/blog3.jpg";
 import { RiArrowRightUpLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const data = [
@@ -51,14 +52,14 @@ const Blog = () => {
         {data.map((blog) => {
           return (
             <div className="flex justify-center mt-4 flex-wrap gap-4" key={blog.id}>
-              <div className="max-w-sm   rounded-lg border border-gray-300 shadow ">
-                <a href="#" className="">
+              <div className="max-w-sm   rounded-lg  ">
+                <Link to="/" className="">
                   <img
                     className=" object-cover"
                     src={blog.image}
                     alt="Sining"
                   />
-                </a>
+                </Link>
 
                 <div className={`p-5  `}>
                   <span className={`flex flex-row ${Styles.blogText}`}>

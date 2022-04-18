@@ -4,10 +4,10 @@ import Navbar from '../components/Navbar/Navbar'
 
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, clickButton }) => {
   return (
       <>
-        <Navbar/>
+        <Navbar clickButton={clickButton}/>
        { children }
         <Footer/>
     </>

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Layout from './utils/Layout'
@@ -10,22 +11,40 @@ import Hero from './components/Hero/Hero'
 import RecentWorks from './components/RecentWorks/RecentWorks'
 import WhatWeDo from './components/WhatWeDo/WhatWeDo'
 import WhyUs from './components/WhyUs/WhyUs'
+import NavMenu from './components/NavMenu/NavMenu';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
 document.title = "Kookies";
 
+// const toggle = false;
+  const [toggle, setToggle] = useState(false);
+
+  const toggleButton = ()=>{
+    setToggle(!toggle);
+  }
+
   return (
    <div className="">
-      <Layout>
+    {
+      toggle ? 
+
+      <NavMenu clickButtonFromNavMenu={toggleButton}/>
+       :
+<>
+      <Layout clickButton={toggleButton}>
         <Hero/>
         <WhatWeDo/>
-        {/* <Brands/> */}
-        {/* <RecentWorks/> */}
-        {/* <Expertise/> */}
+        <RecentWorks/>
+        <Expertise/>
         <Approach/>
         <WhyUs/>
-        {/* <Blog/> */}
+        <Blog/>
       </Layout>
+</>
+    }
+
     </div>
   );
 }

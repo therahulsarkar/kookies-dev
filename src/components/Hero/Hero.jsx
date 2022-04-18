@@ -1,6 +1,7 @@
 import React from 'react'
 import Styles from './Hero.module.css'
 import { HiChevronRight } from "react-icons/hi";
+import bgText from '../../assets/images/home/bgText.svg'
 
 const Hero = () => {
   return (
@@ -18,8 +19,8 @@ const Hero = () => {
         </div>
 
         {/* <span className={Styles.heroBg}>
-          <h1>KOOKIES</h1>
-          <h1>KOOKIES</h1>
+         <img src={bgText} alt="Kookies"/>
+         <img src={bgText} alt="Kookies" />
         </span> */}
     </section>
   )

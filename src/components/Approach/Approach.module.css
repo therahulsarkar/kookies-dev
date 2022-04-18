@@ -24,3 +24,19 @@
     font-size: 1rem;
     font-weight: 400;
 }
+
+.homeImageBg{
+    position: relative;
+    margin: 100px 0 100px 0;
+    background: #F3EFFF;
+    border-radius: 253.5px 0px 0px 253.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.homeImageBg img{
+    /* display: none; */
+    padding: 3rem;
+    width: 80%;
+
+}
