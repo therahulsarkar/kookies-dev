@@ -23,13 +23,13 @@ const WhyUs = () => {
   ];
 
   return (
-    <section className="text-gray-800 body-font bg-violet-100">
+    <section className="paddingX body-font bg-violet-100">
       <div className=" py-16 ">
         <div className={`flex flex-col text-left w-full mb-0 pl-16 ${Styles.whyUsText}`}>
-          <h1 className=" text-gray-900 pb-5">
+          <h1 className=" titleFont pb-5">
             Why Us
           </h1>
-          <span className='text-violet-400'><FaQuoteLeft size={40} /></span>
+          <span className='text-violet-400 mt-6'><FaQuoteLeft size={40} /></span>
           <p>One machine can do the work of fifty ordinary men, <br/>
           No machine can do the work of one extraordinary man.</p>
         </div>
@@ -39,11 +39,11 @@ const WhyUs = () => {
               <div className="p-4 md:w-1/3" key={box.id}>
                 <div className="flex  h-full rounded-lg    p-8 flex-col">
                   <div className={`flex ${Styles.boldText} flex-col mb-3`}>
-                    <h1 className="text-3xl mb-3">0{box.id}</h1>
+                    <h1 className="text-3xl mb-5">0{box.id}</h1>
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-4">
                       {box.title}
                     </h2>
-                    <hr className='bg-gray-300' style={{height: '2px'}}/>
+                    <hr className='bg-gray-300' style={{height: '1.5px'}}/>
                   </div>
                   <div className="flex-grow pr-6">
                     <p className="leading-relaxed text-base">{box.desc}</p>

@@ -13,7 +13,7 @@ const Career = () => {
       <section className={`${Styles.heroSection}`}>
         <h1 className="px-6 sm:px-20">
           Be the one to <br /> embrace the
-          <span className={Styles.geadientText}> glory</span> with us!
+          <span className={Styles.gradientText}> glory</span> with us!
         </h1>
 
         <div className="flex flex-row rotate-90">

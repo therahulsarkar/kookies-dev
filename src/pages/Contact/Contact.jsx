@@ -1,36 +1,36 @@
-import React from 'react'
-import Layout from '../../utils/Layout'
+import React from "react";
+import Layout from "../../utils/Layout";
 import Styles from "./Contact.module.css";
 import { HiChevronRight } from "react-icons/hi";
-
+import { BlackButton } from "../../shared/BlackButton/BlackButton";
+import { Link } from "react-router-dom";
 const Contact = () => {
-
-document.title = "Contact Us";
+  document.title = "Contact Us";
 
   return (
-      <Layout>
-    <section className={`${Styles.heroSection}`}>
-      <h1 className="px-6 sm:px-20">
-      Turn your
-        <span className={Styles.geadientText}> wish</span> into 
-        <span className={Styles.geadientText}> will. </span><br/>
-        Get yourself some delicious <br/> kookies! 
-      </h1>
+    <Layout>
+      <section className={`${Styles.contactSection}`}>
+        <h1 className="px-6 sm:px-20">
+          Turn your
+          <span className="gradientText"> wish</span> into
+          <span className="gradientText"> will</span>.
+          <br />
+          Get yourself some delicious <br /> 
+        </h1>
 
-      <div className="flex flex-row rotate-90">
-        <p className="mr-2">Scroll</p>
-        <div className={Styles.line}></div>
 
-        <HiChevronRight />
-      </div>
+        <span className="my-14">
 
-      {/* <span className={Styles.heroBg}>
+          <BlackButton text="CONTACT US" url="contact" />
+     
+        </span>
+        {/* <span className={Styles.heroBg}>
           <h1>KOOKIES</h1>
           <h1>KOOKIES</h1>
         </span> */}
-    </section>
+      </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

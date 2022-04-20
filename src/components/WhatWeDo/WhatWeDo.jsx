@@ -1,6 +1,6 @@
-import { data } from "autoprefixer";
 import React from "react";
 import Styles from "./WhatWeDo.module.css";
+
 const WhatWeDo = () => {
   const data = [
     {
@@ -21,15 +21,14 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section className="text-gray-800 body-font ">
-    <div className="bg-violet-600 h-1 w-1/12"></div>
+    <section className=" paddingX">
       <div className=" py-20 ">
-        <div className="flex flex-col text-left w-full mb-10 pl-8">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
-          A Day at Kookies
+        <div className="flex flex-col text-left w-full mb-10 pl-12">
+          <h1 className="titleFont">
+            A Day at Kookies
           </h1>
         </div>
-        <div className="flex flex-wrap m-4">
+        <div className="flex flex-wrap m-6 ">
           {data.map((box) => {
             return (
               <div className="p-4 md:w-1/3" key={box.id}>
@@ -41,7 +40,7 @@ const WhatWeDo = () => {
                     </h2>
                     <hr />
                   </div>
-                  <div className="flex-grow pr-6">
+                  <div className="flex-grow w-4/5">
                     <p className="leading-relaxed text-base">{box.desc}</p>
                   </div>
                 </div>

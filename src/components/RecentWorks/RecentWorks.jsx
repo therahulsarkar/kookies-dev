@@ -73,11 +73,11 @@ const RecentWorks = () => {
   };
 
   return (
-    <section className="w-full text-gray-800 bg-violet-100 body-font mt-10 mb-20">
+    <section className="w-full text-gray-800 bg-violet-100 body-font mt-10 mb-20 paddingX">
 
       <div className=" py-4 ">
-        <div className={` ${Styles.WorkText} flex flex-col text-left w-full mb-10 pl-8`}>
-          <h1 className=" text-gray-900">
+        <div className={` ${Styles.WorkText} flex flex-col text-left w-full mb-10 pl-6`}>
+          <h1 className=" titleFont">
             Our Recent Work
           </h1>
         </div>
@@ -93,7 +93,8 @@ const RecentWorks = () => {
             showDots={false}
             responsive={responsive}
             infinite={true}
-            autoPlaySpeed={4000}
+            // autoPlaySpeed={4000}
+            autoPlay={false}
             keyBoardControl={true}
             customTransition="all .5"
             transitionDuration={500}

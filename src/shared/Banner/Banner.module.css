@@ -19,7 +19,7 @@
     right: 10px;
     bottom: 5rem;
 }
-.geadientText{
+.gradientText{
     background: rgb(255,92,151);
     background: linear-gradient(90deg, rgba(255,92,151,1) 0%, rgba(152,41,190,1) 85%);
     background-clip: text;

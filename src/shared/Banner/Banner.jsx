@@ -8,8 +8,8 @@ const Banner = ({ text, coloredText }) => {
       <h1 className="px-6 sm:px-20">
         {text.slice(0, 23)} <br />
         {text.slice(22, 28)}
-        <span className={Styles.geadientText}> {coloredText.slice(0, 4)}</span> { text.slice(28, 33) } { " "} 
-        <span className={Styles.geadientText}>{coloredText.slice(4, 15)}</span>
+        <span className={Styles.gradientText}> {coloredText.slice(0, 4)}</span> { text.slice(28, 33) } { " "} 
+        <span className={Styles.gradientText}>{coloredText.slice(4, 15)}</span>
       </h1>
 
       <div className="flex flex-row rotate-90">

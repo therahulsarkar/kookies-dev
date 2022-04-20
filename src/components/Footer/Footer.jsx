@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className={`p-4   shadow md:px-6 md:py-8 bg-gray-900 ${Styles.footer}`}>
+    <footer className={`   bg-gray-900 ${Styles.footer} `}>
 
     <h1 className="text-white">Get a chance to showcase <br/> your dream product @Kookies</h1>
     <span className="">
-          <button className="bg-violet-500  flex flex-row text-white px-3 py-2 my-6">
+          <button className="bg-violet-500  flex flex-row text-white px-3 py-2 my-12">
             SEE MORE{" "}
             <span className="mt-1 ml-1 text-white ">
               <RiArrowRightUpLine />

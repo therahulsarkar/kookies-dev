@@ -3,6 +3,7 @@
 :root{
   --gradientText: '';
   --violet: '';
+
   
 }
 
@@ -31,4 +32,22 @@ html{
 
 .noHollow > p{
   color: #fff;
+}
+
+/* Global class names for UI */
+.gradientText{
+  background: #DA77DC;
+  background: linear-gradient(260deg, #7363D7  0%, #DA77DC 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paddingX{
+  padding: 0 3rem;
+}
+
+.titleFont{
+  font-size: 2.5rem;
+  font-weight: 500;
 }

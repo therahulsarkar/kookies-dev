@@ -35,9 +35,9 @@ const Blog = () => {
   ];
 
   return (
-    <div className={` ${Styles.blog} flex flex-col justify-center`}>
-      <div className="flex justify-between mx-6 my-10">
-        <h1 className={`${Styles.blogFont}`}>Blog</h1>
+    <div className={` ${Styles.blog} flex flex-col justify-center px-8`}>
+      <div className="flex justify-between mx-24 my-10">
+        <h1 className="titleFont">Blog</h1>
         <span>
           <button className="bg-gray-900  flex flex-row text-white px-3 py-2">
             SEE MORE{" "}
@@ -48,10 +48,10 @@ const Blog = () => {
         </span>
       </div>
 
-      <div className="bg-white flex justify-around flex-wrap m-2">
+      <div className=" flex justify-center gap-8  flex-wrap m-2">
         {data.map((blog) => {
           return (
-            <div className="flex justify-center mt-4 flex-wrap gap-4" key={blog.id}>
+            <div className={`flex  justify-center ${Styles.blogCard} mt-4`} key={blog.id}>
               <div className="max-w-sm   rounded-lg  ">
                 <Link to="/" className="">
                   <img

@@ -10,16 +10,18 @@ const Approach = () => {
 
   return (
     <Layout>
-      <section className={`${Styles.heroSection}`}>
+ 
+      <section className={`${Styles.approachSection}`}>
         <h1 className="px-6 sm:px-20">
           Our
-          <span className={Styles.geadientText}> Secret</span> Formula
+          <span className="gradientText"> Secret</span> Formula
         </h1>
 
         <span className="my-10">
           <BlackButton text="SEE MORE" />
         </span>
-        <div className="flex flex-row rotate-90">
+
+        <div className="flex flex-row rotate-90 ">
           <p className="mr-2">Scroll</p>
           <div className={Styles.line}></div>
 
@@ -38,20 +40,21 @@ const Approach = () => {
         text="The world &#x27;s best cookies are baked with dough of unseizable passion, with a pinch of insanity and a whole lot of flavor of dreams."
       />
 
+
       <section className={` body-font ${Styles.approach}`}>
         <div className=" py-16 ">
           <div
-            className={`flex flex-col text-left  mb-0 pl-8 ${Styles.approachText}`}
+            className={`flex flex-col text-left ml-20 py-20 ${Styles.approachText}`}
           >
-            <h1 className="text-gray-900 pb-5">Our Approach</h1>
+            <h1 className="titleFont  ">Our Approach</h1>
           </div>
 
           {/* 1 Strategic planning */}
           <div
-            className={`flex flex-row justify-between ml-8 ${Styles.ApproachSection}`}
+            className={`flex flex-row justify-between  ${Styles.ApproachSection}`}
           >
             {/* Left row */}
-            <div className="basis-3/6">
+            <div className="basis-3/6 ml-20">
               <div className={`flex flex-row ${Styles.number} `}>
                 <h1>01</h1>
                 <h2 className="top-5 ml-4">Strategic Planning</h2>
@@ -87,10 +90,10 @@ const Approach = () => {
 
           {/* 2  Designing & Development*/}
           <div
-            className={`flex flex-row justify-between ml-8  ${Styles.ApproachSection}`}
+            className={`flex flex-row justify-between  ${Styles.ApproachSection}`}
           >
             {/* Left row */}
-            <div className="basis-3/6 order-2">
+            <div className="basis-3/6 order-2 mr-20">
               <div className={`flex flex-row ${Styles.number} `}>
                 <h1>02</h1>
                 <h2 className="top-5 ml-4">Designing & Development</h2>
@@ -123,10 +126,10 @@ const Approach = () => {
 
           {/* 3 Technical Assistance */}
           <div
-            className={`flex flex-row justify-between ml-8 ${Styles.ApproachSection}`}
+            className={`flex flex-row justify-between  ${Styles.ApproachSection}`}
           >
             {/* Left row */}
-            <div className="basis-3/6">
+            <div className="basis-3/6 ml-20">
               <div className={`flex flex-row ${Styles.number} `}>
                 <h1>03</h1>
                 <h2 className="top-5 ml-4">Technical Assistance</h2>
@@ -156,6 +159,7 @@ const Approach = () => {
           
         </div>
       </section>
+   
     </Layout>
   );
 };
