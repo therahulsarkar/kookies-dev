@@ -12,3 +12,30 @@
     margin-top: 7vh;
 }
 
+.innerCirle{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(237 233 254);
+    border: 3px solid  #C883FF;
+    z-index: 2;
+
+}
+
+.outerCirle{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(237 233 254);
+    border: 3px solid  #C883FF;
+    z-index: 1;
+}
+
+.circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

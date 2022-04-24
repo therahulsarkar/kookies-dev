@@ -1,4 +1,4 @@
-.aboutSection{
+.aboutSection {
     display: flex;
     position: relative;
     justify-content: center;
@@ -9,31 +9,31 @@
     flex-direction: column;
 }
 
-.aboutSection > h1{
+.aboutSection>h1 {
     font-size: 2rem;
     font-weight: 500;
 }
 
-.aboutSection > div{
+.aboutSection>div {
     position: absolute;
     right: 10px;
     bottom: 5rem;
 }
 
-.about_Section_Container{
-    margin: 10rem 0;
+.about_Section_Container {
+    margin: 10rem 0 3rem 0;
     padding: 0 8rem;
 }
 
-.pinkTextMain{
-color: #DA77DC ;
+.pinkTextMain {
+    color: #DA77DC;
 }
 
-.violetTextMain{
+.violetTextMain {
     color: #7363D7;
 }
 
-.line{
+.line {
     height: 1px;
     width: 80px;
     background-color: black;
@@ -41,42 +41,44 @@ color: #DA77DC ;
     margin-right: -10px;
 }
 
-.heroBg{
+.heroBg {
     position: absolute;
     z-index: -1;
 }
 
-.heroBg{
+.heroBg {
     overflow: hidden !important;
 }
 
-.heroBg h1{ 
-color: rgb(129, 129, 129);
--webkit-text-fill-color: white; /* Will override color (regardless of order) */
--webkit-text-stroke-width: 0.2px;
--webkit-text-stroke-color: rgb(141, 141, 141);
-font-size: 10rem;
-font-weight: 600;
+.heroBg h1 {
+    color: rgb(129, 129, 129);
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(141, 141, 141);
+    font-size: 10rem;
+    font-weight: 600;
 }
 
-.violetText > h1{
-    color:rgb(187, 115, 255);
+.violetText>h1 {
+    color: rgb(187, 115, 255);
     font-size: 3rem;
     font-weight: bold;
 }
 
-.violetText > h2{
-    width: 50%;
+.violetText>h2 {
+    width: 100%;
     font-size: 1.5rem;
-    font-weight:500;
-}
-.listText > li{
-    font-size: 1rem;
-    font-weight: 400;
-    
+    font-weight: 500;
 }
 
-.titleButton{
+.listText>li {
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.titleButton {
     margin-right: 10%;
 }
 
@@ -92,76 +94,88 @@ font-weight: 600;
 } */
 
 
-.aboutImageBg{
+.aboutImageBg {
     position: absolute;
-    margin: 10px 0 10px 10px;
     background: #F3EFFF;
     border-radius: 253.5px 0px 0px 253.5px;
     display: flex;
     justify-content: center;
-    right: 0px ;
+    /* right: 0px ; */
 }
 
-.aboutImageBg img{
+.aboutImageBg img {
     /* display: none; */
     padding: 3rem;
-    width: 60%;
+    width: 65%;
 
 }
 
+.teamCard h1 {
+    font-size: 1.5rem;
+}
+
+.teamCard h2 {
+    font-size: 1rem;
+}
+
+.teamCard p {
+    font-size: 0.8rem;
+}
 
 
 @media screen and (max-width: 480px) {
-    .heroSection > h1{
+    .heroSection>h1 {
         font-size: 1.8rem;
         font-weight: 500;
-        
+
     }
-    
-    .heroBg h1{ 
+
+    .heroBg h1 {
         color: rgb(129, 129, 129);
-        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-fill-color: white;
+        /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 0.3px;
         -webkit-text-stroke-color: rgb(141, 141, 141);
         font-size: 4.5rem;
         font-weight: 600;
-        
-        }
 
-        .heroSection > div{
-            position: absolute;
-            right: 5px;
-            bottom: 5rem;
-        }
+    }
 
-        .heroSection > div >p{
-            font-size: 0.8rem;
-        }
+    .heroSection>div {
+        position: absolute;
+        right: 5px;
+        bottom: 5rem;
+    }
 
-        .line{
-            height: 1px;
-            width: 45px;
-            background-color: black;
-            margin-top: 7.2px;
-            margin-right: -10px;
-        }
+    .heroSection>div>p {
+        font-size: 0.8rem;
+    }
 
-      
-        
+    .line {
+        height: 1px;
+        width: 45px;
+        background-color: black;
+        margin-top: 7.2px;
+        margin-right: -10px;
+    }
+
+
+
 }
 
 
 
-@media screen and (min-width: 500px) and (max-width: 760px ) {
+@media screen and (min-width: 500px) and (max-width: 760px) {
 
-    .heroBg h1{ 
+    .heroBg h1 {
         color: rgb(129, 129, 129);
-        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-fill-color: white;
+        /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 0.3px;
         -webkit-text-stroke-color: rgb(141, 141, 141);
         font-size: 3.5rem;
         font-weight: 600;
-        
-        }
+
+    }
 
 }

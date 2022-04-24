@@ -52,13 +52,12 @@ const Career = () => {
           <div
             className={`flex flex-col text-left  mb-0 pl-8 ${Styles.approachText}`}
           >
-            <h1 className="text-gray-900 pb-5">Current Openings</h1>
+            <h1 className="text-gray-900 pb-5 titleFont">Current Openings</h1>
           </div>
 
           <JobOpening title="Front End Developer ( 1 )" description="We are looking for front end developers who are motivated, passionate about programming, result-oriented, believe in leading from the front, and are always willing to go the extra mile. The role requires a talented, self-directed individual with a strong work ethic." link="approach"/>
           <hr className="mt-10 mb-10 w-4/5"/>
           <JobOpening  title="Back End Developer ( 1 )" description="We are looking for back end developers who are motivated, passionate about programming, result-oriented, believe in leading from the front, and are always willing to go the extra mile. The role requires a talented, self-directed individual with a strong work ethic." link="about"/>
-
         </div>
   </section>
     </Layout>

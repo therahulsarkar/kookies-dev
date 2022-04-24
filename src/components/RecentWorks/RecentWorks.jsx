@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Styles from "./RecentWorks.module.css";
 import Slider from "react-slick";
 import Card from "./Card";
-
 import work1 from '../../assets/images/work/work1.svg'
 import work2 from '../../assets/images/work/work2.svg'
 import work3 from '../../assets/images/work/work3.svg'
@@ -13,6 +12,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { WhiteButton } from "../../shared/WhiteButton/WhiteButton";
+import Circle from "./Circle";
 
 
 const RecentWorks = () => {
@@ -82,7 +82,13 @@ const RecentWorks = () => {
           </h1>
         </div>
 
-        <div className="flex justify-end mr-5">
+        <div className="flex justify-between ml-4">
+        <div className="flex flex-row gap-4">
+        <Circle opacity={true}/>
+        <Circle opacity={false}/>
+        <Circle opacity={false}/>
+        
+        </div>
          <WhiteButton text="SEE MORE" url="work" bgColor="bg-violet-100"/>
         </div>
 
@@ -121,7 +127,6 @@ const RecentWorks = () => {
               );
             })}
           </Carousel>
-          ;
         </div>
       </div>
     </section>

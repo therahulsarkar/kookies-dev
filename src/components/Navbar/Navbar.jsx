@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./Navbar.module.css";
-
+import Logo from '../../assets/images/logo.png'
 import { BiGridSmall } from "react-icons/bi";
 import NavMenu from "../NavMenu/NavMenu";
 
@@ -12,8 +12,8 @@ const Navbar = ({ clickButton }) => {
   return (
     <header className="text-gray-600 body-font ">
       <div className="  flex justify-between p-5">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <span className="ml-3 text-2xl">kookies</span>
+        <a className="flex title-font ml-4 font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img src={Logo} alt="Logo" width={120} />
         </a>
         <div className="flex flex-row">
           <nav className=" mt-2  hidden sm:block">

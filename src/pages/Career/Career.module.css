@@ -20,11 +20,7 @@
     bottom: 5rem;
 }
 .gradientText{
-    background: rgb(255,92,151);
-    background: linear-gradient(90deg, rgba(255,92,151,1) 0%, rgba(152,41,190,1) 85%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #7363D7 ;
 }
 
 .line{
@@ -103,11 +99,11 @@ font-weight: 600;
     margin: 2rem;
 }
 
-.approachText > h1{
+/* .approachText > h1{
     font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 5rem;
-}
+} */
 
 
 @media screen and (min-width: 500px) and (max-width: 760px ) {

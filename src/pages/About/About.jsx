@@ -128,11 +128,9 @@ const About = () => {
 
       <div className="bg-violet-600 h-1 w-1/12 "></div>
       {/* Description section */}
-      <div className="flex flex-row justify-between gap-6 mt-20 paddingX">
-        <div className="flex flex-col  text-left w-2/5 ml-20">
-          <h1 className="titleFont">
-            About Us
-          </h1>
+      <div className="flex flex-row justify-between gap-6 mt-20 paddingX ">
+        <div className="flex flex-col  text-left w-6/12 ml-20">
+          <h1 className="titleFont">About Us</h1>
           <p className="mt-16">
             We at kookies crunch out the “im” from impossible, and add flavors
             to your imagination.
@@ -144,8 +142,10 @@ const About = () => {
           </p>
         </div>
 
-        <div className={`${Styles.aboutImageBg}    `}>
-          <img src={aboutImg} alt="About" />
+        <div className=" w-6/12">
+          <div className={`${Styles.aboutImageBg}    `}>
+            <img src={aboutImg} alt="About" />
+          </div>
         </div>
       </div>
 
@@ -153,46 +153,43 @@ const About = () => {
       <section className={` ${Styles.about_Section_Container} `}>
         {/* Card section */}
         <div className="text-gray-800 body-font ">
-   
-            {/* Section title */}
-            <div className="flex flex-row align-middle justify-between ">
-              <h1 className="titleFont">
-                We Got You Covered
-              </h1>
-              <span className={`${Styles.titleButton} `}>
-                <WhiteButton text="SEE MORE" />
-              </span>
-            </div>
-            {/* Section data */}
-            <div className="flex flex-wrap justify-between mt-20">
-              {data.map((box) => {
-                return (
-                  <div className="p-4 " key={box.id}>
-                    <div className={` flex  h-full  rounded-lg bg-white flex-col ${box.id === 2 ? 'pl-16' : 'pl-0'} `}>
-                      <div
-                        className={`flex flex-col mb-3 ${Styles.violetText}`}
-                      >
-                        <h1 className="text-3xl mb-6">0{box.id}</h1>
-                        <h2 className="text-gray-900  mb-4 ">{box.title}</h2>
-                        <hr />
-                      </div>
-                      <div className="flex-grow">
-                        <p className="leading-relaxed text-base">
-                          {box.list.map((listData) => {
-                            return (
-                              <ul className={`${Styles.listText}`}>
-                                <li>{listData}</li>
-                              </ul>
-                            );
-                          })}
-                        </p>
-                      </div>
+          {/* Section title */}
+          <div className="flex flex-row align-middle justify-between ">
+            <h1 className="titleFont ">We Got You Covered</h1>
+            <span className={`${Styles.titleButton} `}>
+              <WhiteButton text="SEE MORE" />
+            </span>
+          </div>
+          {/* Section data */}
+
+          <div className="flex flex-wrap justify-between mt-12">
+            {data.map((box) => {
+              return (
+                <div className="p-4 md:w-1/3 " key={box.id}>
+                  <div className="flex  h-full rounded-lg    p-6 flex-col">
+                    <div className={`flex flex-col mb-3 ${Styles.violetText}`}>
+                      <h1 className="text-3xl mb-3">0{box.id}</h1>
+                      <h2 className="text-gray-900 w-full title-font font-medium mb-4">
+                        {box.title}
+                      </h2>
+                      <hr />
+                    </div>
+                    <div className="flex-grow w-4/5">
+                      <p className="leading-relaxed text-base">
+                        {box.list.map((listData) => {
+                          return (
+                            <ul className={`${Styles.listText}`}>
+                              <li>{listData}</li>
+                            </ul>
+                          );
+                        })}
+                      </p>
                     </div>
                   </div>
-                );
-              })}
-            </div>
-    
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* Do's Dont's section */}
@@ -222,7 +219,36 @@ const About = () => {
         </div>
       </section>
 
-      
+      <section className=" body-font paddingX mb-12">
+        <div className="container px-14 py-12 mx-auto">
+        <h1 className="titleFont mb-12">We are kookies</h1>
+          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            {teamMember.map((team) => {
+              return (
+                <div className={` p-6 md:w-1/3 sm:mb-0 mb-6  ${Styles.teamCard}`}>
+                  <div className=" h-60 overflow-hidden">
+                    <img
+                      alt={team.name}
+                      className="object-cover   w-full"
+                      src={team.image}
+                    />
+                  </div>
+                  <h1 className=" font-medium title-font mt-5">
+                    {team.name}
+                  </h1>
+                  <h2 className=" font-medium title-font mt-1">
+                    {team.job}
+                  </h2>
+                  <p className=" leading-relaxed mt-2">
+                    {team.about}
+                  </p>
+                  
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
