@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import Styles from "./RecentWorks.module.css";
 import Slider from "react-slick";
 import Card from "./Card";
-import work1 from '../../assets/images/work/work1.svg'
-import work2 from '../../assets/images/work/work2.svg'
-import work3 from '../../assets/images/work/work3.svg'
-import work4 from '../../assets/images/work/work4.svg'
+import work1 from "../../assets/images/work/work1.svg";
+import work2 from "../../assets/images/work/work2.svg";
+import work3 from "../../assets/images/work/work3.svg";
+import work4 from "../../assets/images/work/work4.svg";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -14,6 +14,9 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import { WhiteButton } from "../../shared/WhiteButton/WhiteButton";
 import Circle from "./Circle";
 
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+import Zoom from 'react-reveal/Zoom';
 
 const RecentWorks = () => {
   // var settings = {
@@ -32,25 +35,25 @@ const RecentWorks = () => {
       id: 0,
       title: "Primo Umbrella",
       desc: "Payroll Management Application",
-      imgg: work3
+      imgg: work3,
     },
     {
       id: 1,
       title: "Transguard",
       desc: "Delivery Service Web-Based Portal",
-      imgg: work4
+      imgg: work4,
     },
     {
       id: 2,
       title: "Firstep",
       desc: "Beautiful Shareable Matrimonial Biodata Maker",
-      imgg: work2
+      imgg: work2,
     },
     {
       id: 3,
       title: "MyCareerNext",
       desc: "Product for Career Enhancement",
-      imgg: work1
+      imgg: work1,
     },
   ];
 
@@ -73,25 +76,25 @@ const RecentWorks = () => {
   };
 
   return (
-    <section className="w-full text-gray-800 bg-violet-100 body-font mt-10 mb-20 paddingX">
+    <section className="w-full  bg-violet-100 body-font mt-10 mb-20 paddingX">
+      <div className=" py-6  ">
+      <Slide left >
+        <div
+          className={` ${Styles.WorkText} flex flex-col text-left w-full mb-10 pl-8`}
+        >
+          <h1 className=" titleFont">Our Recent Work</h1>
+        </div></Slide>
+        <Fade bottom>
+        <div className="flex justify-between pl-10">
+          <div className="flex flex-row gap-4">
+            <Circle opacity={true} />
+            <Circle opacity={false} />
+            <Circle opacity={false} />
+          </div>
+          <WhiteButton text="SEE MORE" url="work" bgColor="bg-violet-100" />
+        </div></Fade>
 
-      <div className=" py-4 ">
-        <div className={` ${Styles.WorkText} flex flex-col text-left w-full mb-10 pl-6`}>
-          <h1 className=" titleFont">
-            Our Recent Work
-          </h1>
-        </div>
-
-        <div className="flex justify-between ml-4">
-        <div className="flex flex-row gap-4">
-        <Circle opacity={true}/>
-        <Circle opacity={false}/>
-        <Circle opacity={false}/>
-        
-        </div>
-         <WhiteButton text="SEE MORE" url="work" bgColor="bg-violet-100"/>
-        </div>
-
+        <Zoom bottom >
         <div className=" py-10 sm:pb-20 ">
           <Carousel
             swipeable={true}
@@ -110,16 +113,25 @@ const RecentWorks = () => {
           >
             {data.map((data) => {
               return (
-                <div className={`flex justify-center mx-2 flex-wrap ${Styles.card}`} key={data.id} >
+                <div
+                  className={`flex justify-center pl-8 flex-wrap ${Styles.card}`}
+                  key={data.id}
+                >
                   <div className="max-w-sm   rounded-lg    ">
                     <Link to="/" className={Styles.cardImage}>
-                      <img className=" object-cover " src={data.imgg} alt={data.title} />
+                      <img
+                        className=" object-cover "
+                        src={data.imgg}
+                        alt={data.title}
+                      />
                     </Link>
 
                     <div className={`p-5  `}>
                       <span className={`flex flex-col`}>
                         <h1 className=" font-medium text-lg">{data.title}</h1>
-                        <h2 className=" font-normal text-sm mt-3 ">{data.desc}</h2>
+                        <h2 className=" font-normal text-sm mt-3 ">
+                          {data.desc}
+                        </h2>
                       </span>
                     </div>
                   </div>
@@ -127,7 +139,7 @@ const RecentWorks = () => {
               );
             })}
           </Carousel>
-        </div>
+        </div></Zoom>
       </div>
     </section>
   );

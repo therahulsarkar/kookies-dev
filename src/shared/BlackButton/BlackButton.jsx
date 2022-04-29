@@ -6,10 +6,10 @@ export const BlackButton = ({   url, text}) => {
   return (
       <>
     <Link to={`/${url}`}>
-    <button className="bg-gray-900 text-sm flex flex-row text-white px-5 py-2">
+    <button className="bg-black text-sm flex flex-row  text-white py-3 px-4">
     
-      {text}{" "}
-      <span className="mt-1 ml-1 text-white ">
+      <span className='self-center font-medium'> {text}{" "}</span>
+      <span className="ml-1 text-white  self-center ">
         <RiArrowRightUpLine />
       </span>
       

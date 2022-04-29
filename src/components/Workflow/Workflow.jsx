@@ -1,24 +1,25 @@
 import React from "react";
 import Styles from "./Workflow.module.css";
 import { Link } from "react-router-dom";
-import { RiArrowRightUpLine } from "react-icons/ri";
+import { BlackButton } from "../../shared/BlackButton/BlackButton";
 import { FaQuoteLeft } from "react-icons/fa";
 import homeImg from "../../assets/images/home/home1.svg";
 
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
+
 const Approach = () => {
   return (
-    <section className={`paddingX body-font ${Styles.approach}`}>
-      <div className="flex flex-row gap-8 py-6 justify-between  ">
+    <section className={`paddingX  ${Styles.approach}`}>
+      <div className="flex flex-row gap-8 py-6 justify-between px-1 ">
+      <Fade bottom cascade>
         <div
-          className={`flex flex-col text-left  mb-0 pl-8 ${Styles.approachText} basis-6/12 `}
+          className={`flex flex-col text-left   mb-0 pl-8 ${Styles.approachText} basis-6/12 `}
         >
-          <h1 className="titleFont pb-5 ">The Workflow</h1>
-          <span className=" relative -mt-14 ">
-            <div className=" bg-violet-200 h-2 w-9/12 mb-1"></div>
-            <div className="bg-blue-200 h-2 w-9/12"></div>
-          </span>
+          <h1 className="titleFont">The Workflow</h1>
 
-          <span className="text-violet-400 mt-14 -mb-4">
+          <span className="text-violet-400 mt-8 -mb-4">
             <FaQuoteLeft size={40} />
           </span>
           <h2 className="-mt-2">
@@ -31,24 +32,22 @@ const Approach = () => {
           </p>
 
           <h3>We would love to share that secret with you!</h3>
+          <Slide left >
           <div>
-            <Link to="/approach">
-              <button className="bg-gray-900 text-sm flex flex-row text-white px-5 py-2">
-                CHECK NOW{" "}
-                <span className="mt-1 ml-1 text-white ">
-                  <RiArrowRightUpLine />
-                </span>
-              </button>
-            </Link>
-          </div>
+            <BlackButton url="approach" text="CHECK NOW" />
+          </div></Slide>
+        </div>
+        </Fade>
+
+
+        <div className="basis-6/12 relative flex justify-center">
+          <span className={`${Styles.homeImageBg}`}>
+            <img src={homeImg} alt="About" />
+          </span>
         </div>
 
-        <div className="basis-6/12  ">
-          <div className={`${Styles.homeImageBg}  `}>
-            <img src={homeImg} alt="About" />
-          </div>
-        </div>
       </div>
+      <div className={Styles.purpleBg}></div>
     </section>
   );
 };

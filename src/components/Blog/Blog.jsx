@@ -5,6 +5,9 @@ import blog2 from "../../assets/images/blog2.jpg";
 import blog3 from "../../assets/images/blog3.jpg";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { BlackButton } from "../../shared/BlackButton/BlackButton";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Blog = () => {
   const data = [
@@ -35,45 +38,50 @@ const Blog = () => {
   ];
 
   return (
-    <div className={` ${Styles.blog} flex flex-col justify-center px-8`}>
-      <div className="flex justify-between mx-24 my-10">
-        <h1 className="titleFont">Blog</h1>
-        <span>
-          <button className="bg-gray-900  flex flex-row text-white px-3 py-2">
-            SEE MORE{" "}
-            <span className="mt-1 ml-1 text-white ">
-              <RiArrowRightUpLine />
-            </span>
-          </button>
-        </span>
-      </div>
+    <div className={` ${Styles.blog} flex flex-col justify-center paddingX`}>
+      <Fade left cascade>
+        <div className="flex justify-between px-8 my-10 ">
+          <h1 className="titleFont">Blog</h1>
+          <span>
+            <BlackButton url="/" text="SEE MORE" />
+          </span>
+        </div>
+      </Fade>
 
-      <div className=" flex justify-center gap-8  flex-wrap m-2">
-        {data.map((blog) => {
-          return (
-            <div className={`flex  justify-center ${Styles.blogCard} mt-4`} key={blog.id}>
-              <div className="max-w-sm   rounded-lg  ">
-                <Link to="/" className="">
-                  <img
-                    className=" object-cover"
-                    src={blog.image}
-                    alt="Sining"
-                  />
-                </Link>
-
-                <div className={`p-5  `}>
-                  <span className={`flex flex-row ${Styles.blogText}`}>
-                    <h1>{blog.date}</h1>
-                    <h2>{blog.month}</h2>
-                  </span>
-                  <h5 className="mb-3 mt-3 text-sm font-medium">{blog.title}</h5>
-                  <p className="mb-3 font-normal text-base ">{blog.desc}</p>
+      <Zoom bottom cascade>
+        <div className=" flex justify-between px-8  flex-wrap ">
+          {data.map((blog) => {
+            return (
+              <div
+                className={`flex  justify-between ${Styles.blogCard}  mt-4`}
+                key={blog.id}
+              >
+                <div className="max-w-sm   rounded-lg  ">
+                  <Link to="/" className="">
+                    <img
+                      className=" object-cover"
+                      src={blog.image}
+                      alt="Sining"
+                    />
+                  </Link>
+                  <Fade bottom cascade>
+                    <div className={`pt-5 pr-4  `}>
+                      <span className={`flex flex-row ${Styles.blogText}`}>
+                        <h1>{blog.date}</h1>
+                        <h2>{blog.month}</h2>
+                      </span>
+                      <h5 className="mb-3 mt-3 text-sm font-medium">
+                        {blog.title}
+                      </h5>
+                      <p className="mb-3 font-normal text-base ">{blog.desc}</p>
+                    </div>
+                  </Fade>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      </Zoom>
     </div>
   );
 };

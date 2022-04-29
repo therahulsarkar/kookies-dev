@@ -1,11 +1,16 @@
 import React from "react";
 import Styles from "./Hero.module.css";
+
 import { HiChevronRight } from "react-icons/hi";
 import bgText from "../../assets/images/home/bgText.svg";
+import Slide from 'react-reveal/Slide';
 
 const Hero = () => {
   return (
     <section className={`${Styles.heroSection}`}>
+    <div >        <Slide bottom cascade>
+
+    <div>
       <h1 className="px-6 sm:px-20">
         At Kookies <br /> we bake <span className="gradientText"> dreams</span>{" "}
         to your <span className="gradientText">desire</span> <br />
@@ -13,11 +18,13 @@ const Hero = () => {
         <span className="gradientText">technology</span> and{" "}
         <span className="gradientText">designing</span> skills
       </h1>
-
+</div></Slide></div>
       <div className="flex flex-row rotate-90  ">
         <p className="mr-4">Scroll</p>
         <div className={Styles.line}></div>
-       <span className="flex justify-center align-middle "><HiChevronRight /></span>
+        <span className="flex justify-center align-middle ">
+          <HiChevronRight />
+        </span>
       </div>
 
       {/* <span className={Styles.heroBg}>

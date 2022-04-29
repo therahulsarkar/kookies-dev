@@ -1,12 +1,18 @@
-.boldText > h1{
-    color:rgb(176, 115, 255);
+.whyUs {
+    background-color: #F1EDFF;
+    /* padding: 0 7.5rem; */
+}
+
+/* .whyUs > div{
+    padding: 7rem 7.5rem;
+} */
+.boldText>h1 {
+    color: rgb(176, 115, 255);
     font-size: 3rem;
     font-weight: bold;
 }
 
-
-
-.whyUsText > p{
+.whyUsText>p {
     font-size: 1rem;
     font-weight: 400;
 }

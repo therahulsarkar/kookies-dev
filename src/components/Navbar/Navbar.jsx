@@ -4,7 +4,7 @@ import Styles from "./Navbar.module.css";
 import Logo from '../../assets/images/logo.png'
 import { BiGridSmall } from "react-icons/bi";
 import NavMenu from "../NavMenu/NavMenu";
-
+import RubberBand from 'react-reveal/RubberBand';
 
 const Navbar = ({ clickButton }) => {
   // const [toggle, setToggle] = useState(false);
@@ -12,11 +12,12 @@ const Navbar = ({ clickButton }) => {
   return (
     <header className="text-gray-600 body-font ">
       <div className="  flex justify-between p-5">
-        <a className="flex title-font ml-4 font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <RubberBand>
+        <a href="/" className="flex title-font ml-4 font-medium items-center text-gray-900 mb-4 md:mb-0">
           <img src={Logo} alt="Logo" width={120} />
-        </a>
-        <div className="flex flex-row">
-          <nav className=" mt-2  hidden sm:block">
+        </a></RubberBand>
+        <div className="flex flex-row ">
+          <nav className=" hidden sm:block self-center">
             <Link
               to="/contact"
               className="mr-5 font-medium hover:text-gray-900 cursor-pointer"
@@ -24,12 +25,13 @@ const Navbar = ({ clickButton }) => {
               Contact
             </Link>
           </nav>
+          <span className="flex justify-center ">
           <button
-            className="inline-flex items-center z-10 rounded-sm focus:outline-none hover:bg-gray-200"
+            className="self-center  z-10 rounded-sm focus:outline-none "
             onClick={() => clickButton()}
           >
             <BiGridSmall size={35} />
-          </button>
+          </button></span>
         </div>
       </div>
 

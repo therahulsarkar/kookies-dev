@@ -35,6 +35,8 @@ html{
 /* Global class names for UI */
 .gradientText{
   background: #DA77DC;
+  background: -webkit-linear-gradient(260deg, #7363D7  0%, #DA77DC 85%);
+  background: -moz-linear-gradient(260deg, #7363D7  0%, #DA77DC 85%);
   background: linear-gradient(260deg, #7363D7  0%, #DA77DC 85%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -42,11 +44,33 @@ html{
 }
 
 .paddingX{
-  padding: 0 3rem;
+  padding: 0 7.5rem;
 }
 
 .titleFont{
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
+/* Mobile */
+@media only screen and (max-width: 480px){
+
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px){
+
+}
+
+/* Small screen */
+@media only screen and (max-width: 1024px){
+
+}
+/* Large screens */
+@media only screen and (max-width: 1200px){
+
+}
+/* Extra large screens */
+@media only screen and (min-width: 1201px){
+
+}

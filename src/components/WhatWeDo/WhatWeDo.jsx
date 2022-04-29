@@ -1,5 +1,7 @@
 import React from "react";
 import Styles from "./WhatWeDo.module.css";
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
 
 const WhatWeDo = () => {
   const data = [
@@ -21,34 +23,33 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section className=" paddingX">
-      <div className=" py-20 ">
-        <div className="flex flex-col text-left w-full mb-10 pl-12">
-          <h1 className="titleFont">
-            A Day at Kookies
-          </h1>
-        </div>
-        <div className="flex flex-wrap m-6 ">
+    <section className={ `paddingX   ${Styles.WhatWeDo}` } >
+    <Slide left cascade>
+        <div className=" w-full mb-10  pl-10">
+          <h1 className="titleFont">A Day at Kookies</h1>
+        </div></Slide>
+        <Fade bottom>
+        <div className="flex flex-wrap">
           {data.map((box) => {
             return (
               <div className="p-4 md:w-1/3" key={box.id}>
-                <div className="flex  h-full rounded-lg bg-white   p-8 flex-col">
+                <div className="flex h-full rounded-lg    p-6 flex-col">
                   <div className={`flex flex-col mb-3 ${Styles.boldText}`}>
-                    <h1 className="text-3xl mb-3">0{box.id}</h1>
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-4">
+                    <h1 className="mb-1">0{box.id}</h1>
+                    <h2 className=" title-font  mb-4">
                       {box.title}
                     </h2>
                     <hr />
                   </div>
+                  <Fade bottom cascade>
                   <div className="flex-grow w-4/5">
                     <p className="leading-relaxed text-base">{box.desc}</p>
-                  </div>
+                  </div></Fade>
                 </div>
               </div>
             );
           })}
-        </div>
-      </div>
+        </div></Fade>
     </section>
   );
 };

@@ -1,15 +1,15 @@
-.footer > h1{
+.footer>h1 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 2rem;
 }
 
-.footer{
-    padding:  5rem 8rem;
+.footer {
+    padding: 5rem 9.5rem;
 }
 
 @media screen and (max-width: 480px) {
-    .footer > h1{
+    .footer>h1 {
         font-size: 1.3rem;
         font-weight: 500;
         margin-bottom: 2rem;
