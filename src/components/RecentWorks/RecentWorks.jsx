@@ -76,7 +76,7 @@ const RecentWorks = () => {
   };
 
   return (
-    <section className="w-full  bg-violet-100 body-font mt-10 mb-20 paddingX">
+    <section className="w-full  bg-violet-100 body-font mt-10 mb-0 paddingX">
       <div className=" py-6  ">
       <Slide left >
         <div

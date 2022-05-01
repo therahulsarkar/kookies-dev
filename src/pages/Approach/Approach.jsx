@@ -55,9 +55,9 @@ const Approach = () => {
           >
             {/* Left row */}
             <div className="basis-3/6 ml-20">
-              <div className={`flex flex-row ${Styles.number} `}>
+              <div className={`flex flex-row   ${Styles.number} `}>
                 <h1>01</h1>
-                <h2 className="top-5 ml-4">Strategic Planning</h2>
+                <h2 className="ml-4">Strategic Planning</h2>
               </div>
               <p className="mt-6 ">
                 Initializing, the first step is always about the dream, the most
@@ -96,7 +96,7 @@ const Approach = () => {
             <div className="basis-3/6 order-2 mr-20">
               <div className={`flex flex-row ${Styles.number} `}>
                 <h1>02</h1>
-                <h2 className="top-5 ml-4">Designing & Development</h2>
+                <h2 className="ml-4">Designing & Development</h2>
               </div>
               <p className="mt-6 ">
                 Effective use of design is necessary for the long run, it
@@ -132,7 +132,7 @@ const Approach = () => {
             <div className="basis-3/6 ml-20">
               <div className={`flex flex-row ${Styles.number} `}>
                 <h1>03</h1>
-                <h2 className="top-5 ml-4">Technical Assistance</h2>
+                <h2 className=" ml-4">Technical Assistance</h2>
               </div>
               <p className="mt-6 ">
                 Product release isn&#x27;t the end, our team of quality and

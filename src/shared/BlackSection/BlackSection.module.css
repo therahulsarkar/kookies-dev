@@ -4,3 +4,13 @@
     padding: 5rem 10rem;
     height: 45vh;
 }
+
+.whiteQuote{
+    position: absolute;
+    top: 0;
+    left: -1rem;
+}
+
+.whiteQuote img{
+    width: 2.5rem;
+}

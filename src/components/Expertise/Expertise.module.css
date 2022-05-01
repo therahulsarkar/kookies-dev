@@ -1,6 +1,6 @@
 .bgImage{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.564), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.80)), url('../../assets/images/expertise.jpg');
-    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.241)), url('../../assets/images/expertise/bg1.svg');
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -27,7 +27,9 @@
     padding-left: 2rem;
     font-size: 1.3em;
     line-height: 2.2;
+    margin-top: 0.5rem;
 }
+
 
 @media screen and (max-width: 480px) {
 

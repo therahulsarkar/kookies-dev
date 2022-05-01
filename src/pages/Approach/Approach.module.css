@@ -10,7 +10,7 @@
 }
 
 .approachSection > h1{
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -63,21 +63,24 @@ font-weight: 600;
     margin-bottom: 10rem;
 }
 
+
+
 .number > h1{
    
         color: #C883FF;
         -webkit-text-fill-color: white; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 0.8px;
         -webkit-text-stroke-color: #C883FF;
-        font-size: 3rem;
-        font-weight: 600;
-    
+        font-size: 3.5rem;
+        font-weight: 600;   
+
 }
 
 .number > h2{
     font-size: 1.8rem;
     position: relative;
     text-align: end;
+    top: 1.8rem;
 }
 
 

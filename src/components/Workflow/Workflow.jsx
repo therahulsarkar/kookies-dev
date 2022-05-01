@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { BlackButton } from "../../shared/BlackButton/BlackButton";
 import { FaQuoteLeft } from "react-icons/fa";
 import homeImg from "../../assets/images/home/home1.svg";
+import Quote from "../../assets/images/quote.svg";
 
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
@@ -19,8 +20,8 @@ const Approach = () => {
         >
           <h1 className="titleFont">The Workflow</h1>
 
-          <span className="text-violet-400 mt-8 -mb-4">
-            <FaQuoteLeft size={40} />
+          <span className="mt-8 -mb-4">
+            <img src={Quote} alt="Quote"/>
           </span>
           <h2 className="-mt-2">
             An Excellent Process is the blueprint to success.{" "}

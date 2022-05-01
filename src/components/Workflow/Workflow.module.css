@@ -11,6 +11,10 @@
     z-index: 1;
 }
 
+.approachText> span > img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
 .approachText>h2 {
     margin: 1rem 0 1rem 0;
     font-size: 1.1rem;

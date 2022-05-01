@@ -15,7 +15,7 @@ const Contact = () => {
           <span className="gradientText"> wish</span> into
           <span className="gradientText"> will</span>.
           <br />
-          Get yourself some delicious <br /> 
+          Get yourself some delicious <br />  kookies!
         </h1>
 
 

@@ -8,11 +8,20 @@
 } */
 .boldText>h1 {
     color: rgb(176, 115, 255);
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 .whyUsText>p {
     font-size: 1rem;
     font-weight: 400;
+}
+.whyUsText > span > img{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.boldText h2{
+    margin-top: 1rem;
+    font-size: 1.3rem;
 }
