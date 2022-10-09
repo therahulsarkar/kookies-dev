@@ -40,7 +40,7 @@ const Blog = () => {
   return (
     <div className={` ${Styles.blog} flex flex-col justify-center paddingX`}>
       <Fade left cascade>
-        <div className="flex justify-between px-8 my-10 ">
+        <div className="flex justify-between sm:px-8 my-10 ">
           <h1 className="titleFont">Blog</h1>
           <span>
             <BlackButton url="/" text="SEE MORE" />
@@ -49,7 +49,7 @@ const Blog = () => {
       </Fade>
 
       <Zoom bottom cascade>
-        <div className=" flex justify-between px-8  flex-wrap ">
+        <div className=" flex justify-between sm:px-8  flex-wrap ">
           {data.map((blog) => {
             return (
               <div

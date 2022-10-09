@@ -1,3 +1,9 @@
 .workSection{
     margin: 3rem 0 5rem 0;
 }
+
+@media only screen and (max-width: 480px){
+	.workSection{
+    margin: 3rem 0 5rem 0;
+}
+}

@@ -11,7 +11,7 @@ const WorkCard = ({
   url,
 }) => {
   return (
-    <section className={` flex flex-row  ${Styles.WorkCardBg}`}>
+    <section className={` ${Styles.WorkCardBg}`}>
       <div className="basis-1/12  flex place-items-center">
         <span className={`flex flex-row ${Styles.workCardText} `}>
           <h1>{date}</h1>

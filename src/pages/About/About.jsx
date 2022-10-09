@@ -126,10 +126,10 @@ const About = () => {
         </span> */}
       </section>
 
-      <div className="bg-violet-600 h-1 w-1/12 "></div>
+      
       {/* Description section */}
-      <div className="flex flex-row justify-between gap-6 mt-20 paddingX ">
-        <div className="flex flex-col  text-left w-6/12 ml-20">
+      <div className="flex xs:flex-col sm:flex-row justify-between gap-6 mt-20 paddingX ">
+        <div className="flex flex-col  text-left sm:w-6/12 sm:ml-20">
           <h1 className="titleFont">About Us</h1>
           <p className="mt-16">
             We at kookies crunch out the “im” from impossible, and add flavors
@@ -142,7 +142,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className=" w-6/12">
+        <div className=" sm:w-6/12">
           <div className={`${Styles.aboutImageBg}    `}>
             <img src={aboutImg} alt="About" />
           </div>
@@ -156,9 +156,7 @@ const About = () => {
           {/* Section title */}
           <div className="flex flex-row align-middle justify-between ">
             <h1 className="titleFont ">We Got You Covered</h1>
-            <span className={`${Styles.titleButton} `}>
-              <WhiteButton text="SEE MORE" />
-            </span>
+            
           </div>
           {/* Section data */}
 
@@ -174,7 +172,7 @@ const About = () => {
                       </h2>
                       <hr />
                     </div>
-                    <div className="flex-grow w-4/5">
+                    <div className="flex-grow sm:w-4/5">
                       <p className="leading-relaxed text-base">
                         {box.list.map((listData) => {
                           return (
@@ -195,7 +193,7 @@ const About = () => {
         {/* Do's Dont's section */}
         <div className="flex justify-between my-24 ">
           <div>
-            <h1 className=" font-medium text-4xl mb-6">We Believe In</h1>
+            <h1 className=" font-medium text-2xl mb-6">We Believe In</h1>
 
             {dosDonts[0].map((dosData, index) => {
               return (
@@ -207,7 +205,7 @@ const About = () => {
           </div>
 
           <div>
-            <h1 className=" font-medium text-4xl mb-6">And We Dont</h1>
+            <h1 className=" font-medium text-2xl mb-6">And We Dont</h1>
             {dosDonts[1].map((dosData, index) => {
               return (
                 <p key={index} className="mb-4 line-through text-right">
@@ -220,7 +218,7 @@ const About = () => {
       </section>
 
       <section className=" body-font paddingX mb-12">
-        <div className="container px-14 py-12 mx-auto">
+        <div className="container sm:px-14 sm:py-12 mx-auto">
         <h1 className="titleFont mb-12">We are kookies</h1>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             {teamMember.map((team) => {

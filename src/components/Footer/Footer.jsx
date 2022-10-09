@@ -63,7 +63,7 @@ const Footer = () => {
       </Slide>
 
       <Fade bottom cascade>
-        <div className="sm:flex sm:items-center sm:justify-between my-4 text-white">
+        <div className="sm:flex sm:items-center sm:justify-between  my-4 text-white">
           <p>We cook what you crave</p>
           <p>hello@kookies.io</p>
         </div>

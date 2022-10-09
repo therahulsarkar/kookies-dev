@@ -14,3 +14,16 @@
 .whiteQuote img{
     width: 2.5rem;
 }
+
+
+@media screen and (max-width: 480px) {
+.BlackBg{
+    padding: 2rem 1rem;
+    height: 35vh;
+}
+.whiteQuote{
+
+    left: 2rem;
+}
+
+}

@@ -27,7 +27,7 @@ const WhyUs = () => {
 
   return (
     <section className={`paddingX  ${Styles.whyUs} `}>
-      <div className=" py-20 px-8 ">
+      <div className=" py-20 sm:px-8 ">
       <Slide left >
         <div className={`flex flex-col text-left w-full  ${Styles.whyUsText}`}>
           <h1 className=" titleFont pb-5">Why Us</h1>

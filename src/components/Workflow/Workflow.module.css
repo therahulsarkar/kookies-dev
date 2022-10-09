@@ -7,6 +7,12 @@
     justify-content: center;
 }
 
+.approach_wrapper{
+	display: flex;
+	justify-content: spaced-between;
+	flex-direction: row;
+}
+
 .approachText>h1 {
     z-index: 1;
 }
@@ -71,5 +77,38 @@
 
     background-color: #F3EFFF;
 
+
+}
+@media screen and (max-width: 480px) {
+	.approach {
+    margin: 8rem 0rem;
+    position: relative;
+	flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.approach_wrapper{
+	display: flex;
+	justify-content: spaced-between;
+	flex-direction: column;
+}
+.purpleBg {
+	display: none;
+}
+.homeImageBg {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.homeImageBg img {
+    padding: 2rem;
+    width: 90%;
+    margin: 0rem 0;
+    z-index: 1;
+
+}
 
 }

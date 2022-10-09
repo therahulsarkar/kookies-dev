@@ -11,7 +11,7 @@ const Expertise = () => {
           <h1 className="sm:text-3xl text-2xl  font-medium title-font text-gray-900 -rotate-90 absolute top-2/4 ">
           We Got You Covered
           </h1>
-          <span className='flex flex-row -rotate-90 absolute top-2/4 gap-4 underline'>
+          <span className='flex flex-row -rotate-90  absolute top-2/4 gap-4 underline'>
             <p>Evolve</p>
             <p>Maintain</p>
             <p>Develop</p>
@@ -22,7 +22,7 @@ const Expertise = () => {
 
 
         <div className={` w-10/12 bg-red-400 ${Styles.bgImage}`}>
-          <div className={`${Styles.bgText} flex flex-row mt-14 pl-6`}>
+          <div className={`${Styles.bgText} flex flex-row mt-14 sm:pl-6`}>
             <h1>01</h1>
             <h2>Strategy Planning</h2>
           </div>

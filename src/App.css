@@ -56,7 +56,17 @@ html{
 
 /* Mobile */
 @media only screen and (max-width: 480px){
+.paddingX{
+  padding: 0 1rem;
+}
+.titleFont{
+  font-size: 2rem;
+  font-weight: 500;
+}
 
+.scroll_arrow{
+	display: none;
+}
 }
 
 /* Tablet */

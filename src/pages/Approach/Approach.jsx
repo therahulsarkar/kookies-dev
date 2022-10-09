@@ -51,7 +51,7 @@ const Approach = () => {
 
           {/* 1 Strategic planning */}
           <div
-            className={`flex flex-row justify-between  ${Styles.ApproachSection}`}
+            className={`flex flex-row  justify-between  ${Styles.ApproachSection}`}
           >
             {/* Left row */}
             <div className="basis-3/6 ml-20">

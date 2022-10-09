@@ -1,5 +1,7 @@
 .WorkCardBg {
   padding: 2rem 7rem 2rem 7rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .workImage {
@@ -64,4 +66,27 @@
   border: 2px solid black;
   font-weight: 500;
   font-size: 0.8rem;
+}
+@media only screen and (max-width: 480px){
+
+.WorkCardBg {
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+.workCardText {
+  /* position: absolute; */
+  transform: rotate(0deg);
+}
+.workDetailsContainer {
+  margin-left: 0rem;
+}
+.workDetails > h2 {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
 }

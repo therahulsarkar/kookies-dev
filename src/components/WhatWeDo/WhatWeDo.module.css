@@ -11,10 +11,17 @@
 }
 
 .WhatWeDo{
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+@media only screen and (max-width: 480px){
+	.boldText > h1{
+
+    font-size: 4rem;
+
+}
+}
